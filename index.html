@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="toast-container" id="toastContainer">
+        <div id="liveToast" class="toast">
+            <img src="/logo.jpg" width="25" alt="...">
+            <strong>Password copied successfully</strong>
+            <button type="button" class="btn-close" onclick="closeToast()">x</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="input-group">
+            <input type="text" id="disp" readonly>
+            <div id="copy" class="copy-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1621/1621635.png" alt="copy" width="30" height="30">
+            </div>
+        </div>
+        <div id="radio-cont">
+            <div class="radio-group">
+                <label for="fup">Generate a funny Password</label>
+                <input type="radio" name="radio" class="radio" id="fup" checked>
+            </div>
+            <div class="radio-group">
+                <label for="wp">Generate a weak Password</label>
+                <input type="radio" name="radio" class="radio" id="wp">
+            </div>
+            <div class="radio-group">
+                <label for="sp">Generate a strong Password</label>
+                <input type="radio" name="radio" class="radio" id="sp">
+            </div>
+            <div class="radio-group">
+                <label for="ssp">Generate a super strong Password</label>
+                <input type="radio" name="radio" class="radio" id="ssp">
+            </div>
+        </div>
+        <div class="Button">
+            <button id="btn">Generate</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
